@@ -102,3 +102,9 @@ Try `curl https://acmdemo.ddnsfree.com` should response with the custom html fro
 Getting an HTTPS 200 response directly from ALB DNS name will fail, as the domain name of the certificate will not match the ALB name.
 
 
+# Commands References
+`aws elbv2 describe-target-groups`\
+`aws elbv2 describe-load-balancers`\
+`aws ecs describe-services`\
+`aws ec2 describe-instances`\
+`aws ec2 describe-security-groups`
