@@ -103,8 +103,16 @@ Getting an HTTPS 200 response directly from ALB DNS name will fail, as the domai
 
 
 # Commands References
+
+## describes
 `aws elbv2 describe-target-groups`\
 `aws elbv2 describe-load-balancers`\
-`aws ecs describe-services`\
 `aws ec2 describe-instances`\
 `aws ec2 describe-security-groups`
+
+
+# tear down
+`aws elbv2 delete-load-balancer --load-balancer-arn "arn:aws:elasticloadbalancing:ap-northeast-1:692859948557:loadbalancer/app/load-balancer/f4cc2ad927fb4a5a" --region ap-northeast-1`\
+`aws ec2 terminate-instances --instance-ids i-09c51c108ba8cbf5d --region ap-northeast-1`\
+`aws acm delete-certificate --certificate-arn arn:aws:acm:ap-northeast-1:692859948557:certificate/7b09c43a-ba39-42aa-8e29-fa2b02dd437a --region ap-northeast-1`\
+`aws elbv2 delete-target-group --target-group-arn arn:aws:elasticloadbalancing:ap-northeast-1:692859948557:targetgroup/target-group/a769688f64ce5a98 --region ap-northeast-1`\
