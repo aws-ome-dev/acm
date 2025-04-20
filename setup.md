@@ -1,4 +1,3 @@
-
 # Objective
 
 - Integrate third-part domain with AWS
